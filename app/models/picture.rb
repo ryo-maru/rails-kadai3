@@ -2,5 +2,5 @@ class Picture < ApplicationRecord
   belongs_to :user
   mount_uploader :image, ImageUploader
   validates :content, presence: true
-  validates :picture, presence: true
+  validates :image, presence: true
 end
