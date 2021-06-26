@@ -6,7 +6,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   storage :file
   # storage :fog
   include CarrierWave::MiniMagick
-  process resize_to_fill: [100, 50]
+  process resize_to_fill: [1000, 500]
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
@@ -27,7 +27,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # def scale(width, height)
   #   # do something
   # end
-  
+
   # Create different versions of your uploaded files:
   # version :thumb do
   #   process resize_to_fit: [50, 50]

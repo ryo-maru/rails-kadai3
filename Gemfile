@@ -16,6 +16,8 @@ gem 'bcrypt'
 gem 'carrierwave'
 gem 'mini_magick'
 
+gem 'bootstrap', '~> 4.3.1'
+gem 'jquery-rails'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
